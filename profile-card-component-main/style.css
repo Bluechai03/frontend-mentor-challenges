@@ -25,6 +25,8 @@ img {
   max-width: 100%;
 }
 
+/* Attribution */
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -32,6 +34,8 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Background circles */
 
 .bg-img {
   width: 700px;
@@ -74,12 +78,26 @@ img {
   color: hsl(229, 23%, 23%);
 }
 
+/* Card main */
+
 .card__person__img {
   border: 5px solid #fff;
   border-radius: 50%;
   transform: translateY(-55px);
   margin-bottom: -55px;
 }
+
+.person-age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 0.4em;
+}
+
+.person-city {
+  margin-top: 1em;
+}
+
+/* Card bottom */
 
 .card__bottom::before {
   display: block;
@@ -97,6 +115,18 @@ img {
   justify-content: space-between;
 }
 
+.stats {
+  padding: 0 1em;
+}
+
+.stats p {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Container */
+
 .container {
   margin: 0 auto;
   padding: 2em;
@@ -112,22 +142,15 @@ img {
   flex-direction: column;
 }
 
-.person-age {
-  color: hsl(227, 10%, 46%);
-  font-weight: 400;
-  margin-left: 0.4em;
-}
+@media screen and (min-width: 1024px) {
+  .bg-img {
+    opacity: 1;
+  }
+  .top-img {
+    transform: translateY(-50%);
+  }
 
-.person-city {
-  margin-top: 1em;
-}
-
-.stats {
-  padding: 0 1em;
-}
-
-.stats p {
-  margin-top: 10px;
-  font-size: 12px;
-  letter-spacing: 1px;
+  .bottom-img {
+    transform: translateX(10%) translateY(55%);
+  }
 }
