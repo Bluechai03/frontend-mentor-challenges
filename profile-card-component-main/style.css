@@ -9,6 +9,12 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -23,11 +29,18 @@ img {
 
 .card {
   background: white;
-  margin: 0 auto;
+  color: hsl(227, 10%, 46%);
+  margin: auto;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
-  position: relative;
+  width: 90%;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
 }
 
 .card__img {
@@ -37,6 +50,12 @@ img {
 .card__person__img {
   border: 5px solid #fff;
   border-radius: 50%;
+  transform: translateY(-55px);
+  margin-bottom: -55px;
+}
+
+.person-age {
+  color: hsl(227, 10%, 46%);
 }
 
 .card__main,
