@@ -55,6 +55,19 @@ img {
   transform: translateX(71%) translateY(45%);
 }
 
+@media screen and (min-width: 1024px) {
+  .bg-img {
+    opacity: 1;
+  }
+  .top-img {
+    transform: translateY(-50%);
+  }
+
+  .bottom-img {
+    transform: translateX(10%) translateY(55%);
+  }
+}
+
 /* Card */
 
 .card {
@@ -140,17 +153,4 @@ img {
 .col {
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (min-width: 1024px) {
-  .bg-img {
-    opacity: 1;
-  }
-  .top-img {
-    transform: translateY(-50%);
-  }
-
-  .bottom-img {
-    transform: translateX(10%) translateY(55%);
-  }
 }
