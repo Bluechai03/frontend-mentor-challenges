@@ -155,6 +155,9 @@ a:hover {
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+
     max-width: 600px;
   }
 
