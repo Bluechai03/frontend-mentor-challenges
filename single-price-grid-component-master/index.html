@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Single Price Grid Component</title>
 
@@ -27,13 +32,51 @@
     </style>
   </head>
   <body>
-    Join our community 30-day, hassle-free money back guarantee Gain access to
-    our full library of tutorials along with expert code reviews. Perfect for
-    any developers who are serious about honing their skills. Monthly
-    Subscription &dollar;29 per month Full access for less than &dollar;1 a day
-    Sign Up Why Us Tutorials by industry experts Peer &amp; expert code review
-    Coding exercises Access to our GitHub repos Community forum Flashcard decks
-    New videos every week
+    <main class="main">
+      <div class="main__top container">
+        <div class="col">
+          <div class="top__text">
+            <h2 class="title title--color">Join our community</h2>
+            <h3 class="subtitle">30-day, hassle-free money back guarantee</h3>
+            <p class="description description--top">
+              Gain access to our full library of tutorials along with expert
+              code reviews. Perfect for any developers who are serious about
+              honing their skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main__mid container">
+        <div class="col">
+          <div class="mid__text text--white">
+            <h2 class="title">Monthly Subscription</h2>
+            <h3 class="subtitle subtitle--mid-text">
+              <span class="price">&dollar;29</span> per month
+            </h3>
+            <p class="description description--mid">
+              Full access for less than &dollar;1 a day
+            </p>
+          </div>
+          <a href="" class="btn">Sign Up</a>
+        </div>
+      </div>
+      <div class="main__bottom container">
+        <div class="col">
+          <div class="bottom__text text--white">
+            <h2 class="title">Why Us</h2>
+            <ul class="description list">
+              <li class="list-item">Tutorials by industry experts</li>
+              <li class="list-item">Peer &amp; expert code review</li>
+              <li class="list-item">Coding exercises</li>
+              <li class="list-item">Access to our GitHub repos</li>
+              <li class="list-item">Community forum</li>
+              <li class="list-item">Flashcard decks</li>
+              <li class="list-item">New videos every week</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <p class="attribution">
