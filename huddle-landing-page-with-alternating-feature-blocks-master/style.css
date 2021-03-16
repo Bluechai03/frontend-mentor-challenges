@@ -157,11 +157,18 @@ a:hover {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.125rem;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  font-size: 1.125rem;
+  color: hsl(65, 76%, 43%);
+}
+
+.attribution a:focus{
+  transform: rotate(5deg);
+  transform: scale(2,2);
 }
 
 /* Layout */
@@ -235,6 +242,7 @@ a:hover {
 .footer {
   background: hsl(192, 100%, 9%);
   padding-top: 8em;
+  color: white;
 }
 
 .social-icons{
