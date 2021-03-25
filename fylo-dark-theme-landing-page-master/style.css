@@ -1,0 +1,17 @@
+:root {
+  --clr-accent-light: hsl(176, 68%, 64%);
+  --clr-accent-dark: hsl(198, 60%, 50%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
