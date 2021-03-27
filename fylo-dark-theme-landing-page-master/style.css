@@ -11,7 +11,135 @@
 
 body {
   margin: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
 }
 
-/* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Raleway', sans-serif; */
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 100px;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  padding: 1.75rem 0;
+}
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: "Raleway", sans-serif;
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.section__title {
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+
+.section__text {
+  line-height: 1.5;
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(196, 196, 196);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.75rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-accent-light),
+    var(--clr-accent-dark)
+  );
+  padding: 1em 6em;
+  border-radius: 100px;
+}
+
+/* Flexbox */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header > .container {
+  flex-direction: row;
+}
+
+.col {
+  width: 100%;
+}
+
+/* Layout */
+
+.intro__img {
+  margin: 1.25rem auto;
+  padding-bottom: 5rem;
+  width: 95%;
+}
+
+.intro {
+  background: url(images/bg-curvy-mobile.svg) no-repeat;
+  background-size: cover cover;
+  background-position: bottom;
+  background-color: hsl(217, 28%, 15%);
+}
+
+.main {
+  background: hsl(218, 28%, 13%);
+}
+
+.section--one__feature {
+  margin-bottom: 4rem;
+}
+
+.section--zero {
+  transform: translateY(-40%);
+  margin: 0 auto;
+  padding-top: 1.75rem;
+}
+
+.feature__img {
+  max-width: 75px;
+}
+
+.section--two {
+  text-align: left;
+}
+
+.section__title--h2 {
+  font-size: 1.15rem;
+}
+
+.section--two .section__text {
+  margin: 0;
+  width: initial;
+}
