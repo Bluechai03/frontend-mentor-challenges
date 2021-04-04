@@ -136,21 +136,29 @@
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
-            <a href="" class="section__link">See how Fylo works</a>
+            <a href="" class="section__link"
+              >See how Fylo works<i
+                class="fas fa-arrow-circle-right section__link__icon"
+              ></i
+            ></a>
           </div>
         </section>
         <section class="section section--three container row">
-          <img src="images/bg-quotes.png" alt="" />
+          <img src="images/bg-quotes.png" alt="" class="section--three__img" />
           <div class="col col--testimonial">
             <p class="testimonial__text">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </p>
-            <div class="testimonial__author">
-              <img src="images/profile-1.jpg" alt="" class="author__profile" />
-              <h3 class="author__name">Satish Patel</h3>
-              <p class="author__position">Founder & CEO, Huddle</p>
+            <div class="testimonial__author container row">
+              <div class="col col--author-profile">
+                <img src="images/profile-1.jpg" alt="" class="author__img" />
+              </div>
+              <div class="col col--author-info">
+                <h3 class="author__name">Satish Patel</h3>
+                <p class="author__position">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
           <div class="col col--testimonial">
@@ -159,44 +167,54 @@
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </p>
-            <div class="testimonial__author">
-              <img src="images/profile-2.jpg" alt="" class="author__profile" />
-              <h3 class="author__name">Bruce McKenzie</h3>
-              <p class="author__position">Founder & CEO, Huddle</p>
+            <div class="testimonial__author container row">
+              <div class="col col--author-profile">
+                <img src="images/profile-2.jpg" alt="" class="author__img" />
+              </div>
+              <div class="col col--author-info">
+                <h3 class="author__name">Bruce McKenzie</h3>
+                <p class="author__position">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
           <div class="col col--testimonial">
-            Fylo has improved our team productivity by an order of magnitude.
-            Since making the switch our team has become a well-oiled
-            collaboration machine.
-            <div class="testimonial__author">
-              <img src="images/profile-3.jpg" alt="" class="author__profile" />
-              <h3 class="author__name">Iva Boyd</h3>
-              <p class="author__position">Founder & CEO, Huddle</p>
+            <p class="testimonial__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="testimonial__author container row">
+              <div class="col col--author-profile">
+                <img src="images/profile-3.jpg" alt="" class="author__img" />
+              </div>
+              <div class="col col--author-info">
+                <h3 class="author__name">Iva Boyd</h3>
+                <p class="author__position">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
     <section class="section section--sign-up">
-      <h1 class="section__title">Get early access today</h1>
+      <h2 class="section__title-h2">Get early access today</h1>
       <p class="section__text">
         It only takes a minute to sign up and our free starter tier is extremely
         generous. If you have any questions, our support team would be happy to
         help you.
       </p>
       <form action="#">
-        <input type="email" value="rerew" />
-        <input type="submit" value="Get Started For Free" />
+        <input type="email" placeholder="email@example.com" />
+        <a href="#" class="btn">Get Started For Free</a>
       </form>
     </section>
     <footer class="footer">
-      <img src="images/logo.svg" alt="" class="logo" />
       <div class="container row">
-        <div class="col">
+      <img src="images/logo.svg" alt="" class="logo" />
+        <div class="col col--location">
           <i class="fas fa-map-marker-alt"></i>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          <p class="footer__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         </div>
         <div class="col">
           <ul class="col__list">
@@ -223,7 +241,7 @@
             <li class="list__item">Privacy</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col social-media">
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-instagram"></i>
