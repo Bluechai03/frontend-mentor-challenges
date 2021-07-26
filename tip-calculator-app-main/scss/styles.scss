@@ -1,0 +1,14 @@
+:root{
+    --clr-primary: hsl(172, 67%, 45%);
+    --clr-primary-dark: hsl(183, 100%, 15%);
+    --clr-gray-dark: hsl(186, 14%, 43%)
+    --clr-gray: hsl(184, 14%, 56%)
+    --clr-gray-light: hsl(185, 41%, 84%)
+    --clr-cream: hsl(189, 41%, 97%)
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+// font-family: 'Space Mono', monospace;
