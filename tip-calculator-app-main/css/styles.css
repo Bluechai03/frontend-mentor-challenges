@@ -1,4 +1,57 @@
-*, *::before, *::after {
+:root {
+  --clr-primary: hsl(172, 67%, 45%);
+  --clr-primary-dark: hsl(183, 100%, 15%);
+  --clr-primary-light: hsl(185, 41%, 84%);
+  --clr-gray-dark: hsl(186, 14%, 43%);
+  --clr-gray: hsl(184, 14%, 56%);
+  --clr-cream: hsl(189, 41%, 97%);
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+p,
+label {
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--clr-primary-light);
+  font-family: 'Space Mono', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: var(--clr-gray-dark);
+}
+
+.title::after {
+  display: block;
+  content: 'tter';
+}
+
+.card {
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  max-width: 1024px;
+  border-radius: 1.125rem;
 }
 /*# sourceMappingURL=styles.css.map */
