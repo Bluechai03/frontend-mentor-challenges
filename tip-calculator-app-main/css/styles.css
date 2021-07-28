@@ -54,4 +54,12 @@ body {
   max-width: 1024px;
   border-radius: 1.125rem;
 }
+
+.result__label::after {
+  content: '/ person';
+}
+
+.result__num::before {
+  content: '$';
+}
 /*# sourceMappingURL=styles.css.map */

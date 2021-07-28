@@ -1,13 +1,16 @@
-function calcTipAmount(billValue, tipValue) {
-  const displayTipAmount = document.querySelector('#numTipAmount');
-  if (billValue && tipValue) {
+const displayTipAmount = document.querySelector('#numTipAmount');
+
+function calcTipAmount(billValue, tipValue, numOfPeopleValue) {
+  if (billValue && tipValue && numOfPeopleValue) {
     console.log(`Bill Value: ${billValue}`);
     console.log(`Tip Value: ${tipValue}`);
-    const tipAmountValue = (Number(billValue) * Number(tipValue)) / 100;
-    displayTipAmount.textContent = tipAmountValue;
-    console.log(`Tip Amount: ${tipAmountValue}`);
+    const totalTipAmountValue = (Number(billValue) * Number(tipValue)) / 100;
+    const perTipAmountValue = totalTipAmountValue / numOfPeopleValue;
+    displayTipAmount.textContent = perTipAmountValue;
+    displayTipAmount.textContent = Math.floor((perTipAmountValue + Number.EPSILON) * 100) / 100;
+    console.log(`Tip Amount: ${totalTipAmountValue}`);
 
-    return tipAmountValue;
+    return totalTipAmountValue;
   }
   return 0;
 }
@@ -17,15 +20,16 @@ let billValue;
 let tipPercentValue;
 let numOfPeopleValue;
 
+const displayTotal = document.querySelector('#numTotal');
+
 function calcTotal(tipAmountValue = 0) {
   console.log(`Bill Value: ${billValue}`);
   console.log(`Tip Amount: ${tipAmountValue}`);
   console.log(`Num of People: ${numOfPeopleValue}`);
   // Will only run if all values are not empty
   if (billValue && tipAmountValue && numOfPeopleValue) {
-    const displayTotal = document.querySelector('#numTotal');
     const total = (Number(billValue) + Number(tipAmountValue)) / Number(numOfPeopleValue);
-    displayTotal.textContent = total;
+    displayTotal.textContent = Math.round(total * 100) / 100;
     console.log(`Total: ${total}`);
   }
 }
@@ -33,11 +37,11 @@ function calcTotal(tipAmountValue = 0) {
 const inputBill = document.querySelector('#bill');
 inputBill.addEventListener('input', (e) => {
   billValue = e.target.value; // Sets global variable to the inputted value
-  calcTotal(calcTipAmount(billValue, tipPercentValue));
+  calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
 });
 
-// Bubbling concept
-// Fires event listener to all the buttons inside the wrapper class and stores their value
+// Creates an event listener for all the buttons inside the wrapper class and stores their value
+// This is bubbling
 const wrapperTips = document.querySelector('.wrapper');
 wrapperTips.addEventListener('click', (e) => {
   const isButton = e.target.nodeName === 'BUTTON';
@@ -45,19 +49,31 @@ wrapperTips.addEventListener('click', (e) => {
     return;
   }
   tipPercentValue = e.target.value;
-  calcTotal(calcTipAmount(billValue, tipPercentValue));
+  calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
 });
 
 // Store entered tip value to variable when input event is fired
 const inputTipCustom = wrapperTips.querySelector('#input-tip');
 inputTipCustom.addEventListener('input', (e) => {
   tipPercentValue = e.target.value;
-  calcTotal(calcTipAmount(billValue, tipPercentValue));
+  calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
 });
 
 // Store entered number of people value to variable when input event is fired
 const inputNumOfPeople = document.querySelector('#numOfPeople');
 inputNumOfPeople.addEventListener('input', (e) => {
   numOfPeopleValue = e.target.value;
-  calcTotal(calcTipAmount(billValue, tipPercentValue));
+  calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
+});
+
+const btnReset = document.querySelector('#btnReset');
+btnReset.addEventListener('click', () => {
+  billValue = 0;
+  tipPercentValue = 0;
+  numOfPeopleValue = 0;
+  inputBill.value = null;
+  inputTipCustom.value = null;
+  inputNumOfPeople.value = null;
+  displayTipAmount.textContent = '0.00';
+  displayTotal.textContent = '0.00';
 });

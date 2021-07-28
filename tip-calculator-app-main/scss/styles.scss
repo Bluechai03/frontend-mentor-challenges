@@ -54,6 +54,16 @@ body {
   border-radius: 1.125rem;
 }
 
+.result {
+  &__label::after {
+    content: '/ person';
+  }
+
+  &__num::before {
+    content: '$';
+  }
+}
+
 .btn--tip {
 }
 
