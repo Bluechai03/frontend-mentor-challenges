@@ -5,18 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <title>Tip calculator app</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -27,33 +19,21 @@
         <div class="col">
           <label for="bill">Bill</label>
           <div class="input-field">
-            <input
-              type="number"
-              id="bill"
-              name="bill"
-              placeholder="0"
-              min="0"
-            />
+            <input type="number" id="bill" name="bill" placeholder="0" min="0" />
             <img src="images/icon-dollar.svg" alt="" />
           </div>
           <p>Select Tip %</p>
-          <div class="grid">
-            <input class="btn--tip" type="button" value="5%" />
-            <input class="btn--tip" type="button" value="10%" />
-            <input class="btn--tip" type="button" value="15%" />
-            <input class="btn--tip" type="button" value="25%" />
-            <input class="btn--tip" type="button" value="50%" />
-            <input class="input-field" type="number" placeholder="custom" />
+          <div class="grid wrapper">
+            <button class="btn--tip" value="5">5%</button>
+            <button class="btn--tip" value="10">10%</button>
+            <button class="btn--tip" value="15">15%</button>
+            <button class="btn--tip" value="25">25%</button>
+            <button class="btn--tip" value="50">50%</button>
+            <input class="input-field" id="input-tip" type="number" placeholder="custom" />
           </div>
           <label for="num-of-people">Number of People</label>
           <div class="input-field">
-            <input
-              type="number"
-              id="numOfPeople"
-              name="num-of-people"
-              placeholder="0"
-              min="0"
-            />
+            <input type="number" id="numOfPeople" name="num-of-people" placeholder="0" min="0" />
             <img src="images/icon-person.svg" alt="" />
           </div>
         </div>
