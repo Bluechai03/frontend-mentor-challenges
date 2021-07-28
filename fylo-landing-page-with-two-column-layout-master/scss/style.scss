@@ -1,5 +1,172 @@
+@import "config";
+@import "utilities";
+
 *,
 *::before,
 *:after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.1ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+
+// Navigation
+h1,
+h2,
+nav,
+.btn {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+.nav__item + .nav__item {
+  margin-left: 0.75rem;
+}
+
+.logo {
+  max-width: 5.35rem;
+}
+
+// Buttons and Input
+.btn-primary {
+  margin-top: 0.5rem;
+  border-radius: $br-radius;
+}
+
+input {
+  border: 1px solid black;
+  padding: 0.75rem 0.5rem;
+  border-radius: $br-radius;
+}
+
+// Hero section
+.hero {
+  margin-top: 5rem;
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.hero__text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// Main
+.main {
+  margin-top: 5rem;
+  background: url(/images/bg-curve-mobile.svg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .section__title {
+    font-size: 1.125rem;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .section__link {
+    color: $clr-secondary--dark;
+  }
+
+  .section__link::after {
+    content: " ";
+    display: block;
+    width: 145.2px;
+    margin: 5px auto;
+    height: 2px;
+    border-top: 1px solid $clr-secondary--dark;
+  }
+
+  .section__link:hover {
+    opacity: 0.7;
+  }
+}
+
+.hero,
+.main {
+  .container {
+    margin: 2rem auto 1rem;
+    justify-content: stretch;
+  }
+}
+
+// Card
+.card {
+  background: white;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0 1em 1.5em 3em;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 3px #ccc;
+  font-family: $ff-secondary;
+
+  &::before {
+    display: flex;
+    content: open-quote;
+    font-family: sans-serif;
+    font-size: 3rem;
+    height: 30px;
+  }
+}
+
+.card__author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  h3,
+  p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 35px;
+    border-radius: 50px;
+  }
+}
+
+.profile__name {
+  font-size: 1em;
+}
+
+.profile__position {
+  font-size: 0.75em;
+}
+
+.section--two {
+  background: $clr-primary;
+  color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+
+  input {
+    border: none;
+  }
 }
