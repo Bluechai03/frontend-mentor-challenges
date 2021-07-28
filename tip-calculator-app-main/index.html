@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
-  
-  <title>Tip calculator app</title>
-
-</head>
-<body>
-  <main>
-    <h3>Splitter</h3>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h3 class="title">Spli</h3>
     <div class="card">
       <div class="wrapper">
         <div class="col">
           <label for="bill">Bill</label>
           <div class="input-field">
-          <input type="number" id="bill" name="bill" placeholder="0" min="0">
-          <img src="images/icon-dollar.svg" alt="">
-        </div>
+            <input
+              type="number"
+              id="bill"
+              name="bill"
+              placeholder="0"
+              min="0"
+            />
+            <img src="images/icon-dollar.svg" alt="" />
+          </div>
           <p>Select Tip %</p>
           <div class="grid">
-            <input type="button" value="5%">
-            <input type="button" value="10%">
-            <input type="button" value="15%">
-            <input type="button" value="25%">
-            <input type="button" value="50%">
-            <input type="number" placeholder="custom">
+            <input class="btn--tip" type="button" value="5%" />
+            <input class="btn--tip" type="button" value="10%" />
+            <input class="btn--tip" type="button" value="15%" />
+            <input class="btn--tip" type="button" value="25%" />
+            <input class="btn--tip" type="button" value="50%" />
+            <input class="input-field" type="number" placeholder="custom" />
           </div>
           <label for="num-of-people">Number of People</label>
           <div class="input-field">
-          <input type="number" id="numOfPeople" name="num-of-people" placeholder="0" min="0">
-          <img src="images/icon-person.svg" alt="">
-        </div>
+            <input
+              type="number"
+              id="numOfPeople"
+              name="num-of-people"
+              placeholder="0"
+              min="0"
+            />
+            <img src="images/icon-person.svg" alt="" />
+          </div>
         </div>
         <div class="col result">
           <div class="result__tip-amount">
@@ -51,12 +70,14 @@
         </div>
       </div>
     </div>
-  </main>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Anna Montero</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Anna Montero</a>.
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
