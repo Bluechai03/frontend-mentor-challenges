@@ -34,6 +34,19 @@ function calcTotal(tipAmountValue = 0) {
   }
 }
 
+function isValueZero() {
+  const inputLabel = document.querySelector('.input-label');
+  const numOfPeopleContainer = document.querySelector('#numOfPeopleContainer');
+  if (Number(numOfPeopleValue) === 0) {
+    numOfPeopleContainer.classList.add('input-field--error');
+    console.log('Value is zero');
+    inputLabel.setAttribute('data-after', "Can't be zero");
+  } else {
+    inputLabel.setAttribute('data-after', '');
+    numOfPeopleContainer.classList.remove('input-field--error');
+  }
+}
+
 const inputBill = document.querySelector('#bill');
 inputBill.addEventListener('input', (e) => {
   billValue = e.target.value; // Sets global variable to the inputted value
@@ -64,9 +77,11 @@ const inputNumOfPeople = document.querySelector('#numOfPeople');
 inputNumOfPeople.addEventListener('input', (e) => {
   numOfPeopleValue = e.target.value;
   calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
+  isValueZero();
 });
 
 const btnReset = document.querySelector('#btnReset');
+if (!billValue || !tipPercentValue || !numOfPeopeValue) btnReset.disabled = true;
 btnReset.addEventListener('click', () => {
   billValue = 0;
   tipPercentValue = 0;

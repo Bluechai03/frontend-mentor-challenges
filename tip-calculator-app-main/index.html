@@ -15,48 +15,49 @@
   <body>
     <h3 class="title">Spli</h3>
     <div class="card">
-      <div class="wrapper">
-        <div class="col">
+      <div class="flex">
+        <div class="col col--input">
           <label for="bill">Bill</label>
           <div class="input-field">
-            <input type="number" id="bill" name="bill" placeholder="0" min="0" />
+            <input class="input-field__input" type="number" id="bill" name="bill" placeholder="0" min="0" />
             <img src="images/icon-dollar.svg" alt="" />
           </div>
           <p>Select Tip %</p>
           <div class="grid wrapper">
-            <button class="btn--tip" value="5">5%</button>
-            <button class="btn--tip" value="10">10%</button>
-            <button class="btn--tip" value="15">15%</button>
-            <button class="btn--tip" value="25">25%</button>
-            <button class="btn--tip" value="50">50%</button>
-            <input class="input-field" id="input-tip" type="number" placeholder="custom" />
+            <button class="grid__input btn btn--tip" value="5">5%</button>
+            <button class="grid__input btn btn--tip" value="10">10%</button>
+            <button class="grid__input btn btn--tip" value="15">15%</button>
+            <button class="grid__input btn btn--tip" value="25">25%</button>
+            <button class="grid__input btn btn--tip" value="50">50%</button>
+            <div class="input-field">
+              <input class="grid__input input-field__input" id="input-tip" type="number" placeholder="Custom" min="0" />
+            </div>
           </div>
-          <label for="num-of-people">Number of People</label>
-          <div class="input-field">
-            <input type="number" id="numOfPeople" name="num-of-people" placeholder="0" min="0" />
+          <label class="input-label" for="num-of-people">Number of People</label>
+          <div class="input-field" id="numOfPeopleContainer">
+            <input type="number" class="input-field__input" id="numOfPeople" name="num-of-people" placeholder="0" min="0" />
             <img src="images/icon-person.svg" alt="" />
           </div>
         </div>
-        <div class="col result">
-          <div class="result__label">
-            <p>Tip Amount</p>
-            <h1 class="result__num" id="numTipAmount">0.00</h1>
+        <div class="col col--dark result">
+          <div class="result__content">
+            <div class="col">
+              <p class="result__label">Tip Amount</p>
+              <h1 class="result__num" id="numTipAmount">0.00</h1>
+            </div>
+            <div class="col">
+              <p class="result__label">Total</p>
+              <h1 class="result__num" id="numTotal">0.00</h1>
+            </div>
           </div>
-          <div class="result__label">
-            <p>Total</p>
-            <h1 class="result__num" id="numTotal">0.00</h1>
-          </div>
-          <button id="btnReset">Reset</button>
+          <button class="btn btn--reset" id="btnReset">Reset</button>
         </div>
       </div>
     </div>
-
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Anna Montero</a>.
-    </div> -->
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Bluechai03">Anna Montero</a>.
+    </div>
 
     <script src="script.js"></script>
   </body>
