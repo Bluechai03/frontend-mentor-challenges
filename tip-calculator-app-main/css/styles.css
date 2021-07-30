@@ -49,7 +49,7 @@ body {
 
 @media screen and (min-width: 52em) {
   body {
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
   }
 }
 
@@ -67,10 +67,14 @@ body {
   transition: background-color 100ms ease-in-out;
 }
 
-.btn:hover, .btn:focus, .btn:disabled, .btn:active, .btn--active {
+.btn:hover, .btn:focus, .btn:active, .btn--active {
+  background: #95eadf;
+  color: var(--clr-primary-dark);
+}
+
+.btn:disabled {
   background: var(--clr-primary);
   color: var(--clr-primary-dark);
-  opacity: 1;
 }
 
 .btn--reset {

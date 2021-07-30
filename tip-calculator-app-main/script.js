@@ -34,16 +34,15 @@ function calcTotal(tipAmountValue = 0) {
   }
 }
 
-function isValueZero() {
-  const inputLabel = document.querySelector('.input-label');
-  const numOfPeopleContainer = document.querySelector('#numOfPeopleContainer');
-  if (Number(numOfPeopleValue) === 0) {
-    numOfPeopleContainer.classList.add('input-field--error');
+function isValueZero(value, container, index) {
+  const inputLabels = document.querySelectorAll('.input-label');
+  if (Number(value) === 0) {
+    container.classList.add('input-field--error');
     console.log('Value is zero');
-    inputLabel.setAttribute('data-after', "Can't be zero");
+    inputLabels[index].setAttribute('data-after', "Can't be zero");
   } else {
-    inputLabel.setAttribute('data-after', '');
-    numOfPeopleContainer.classList.remove('input-field--error');
+    inputLabels[index].setAttribute('data-after', '');
+    container.classList.remove('input-field--error');
   }
 }
 
@@ -51,6 +50,8 @@ const inputBill = document.querySelector('#bill');
 inputBill.addEventListener('input', (e) => {
   billValue = e.target.value; // Sets global variable to the inputted value
   calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
+  const billContainer = document.querySelector('#billContainer');
+  isValueZero(billValue, billContainer, 0);
 });
 
 // Creates an event listener for all the buttons inside the wrapper class and stores their value
@@ -82,7 +83,8 @@ const inputNumOfPeople = document.querySelector('#numOfPeople');
 inputNumOfPeople.addEventListener('input', (e) => {
   numOfPeopleValue = e.target.value;
   calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
-  isValueZero();
+  const numOfPeopleContainer = document.querySelector('#numOfPeopleContainer');
+  isValueZero(numOfPeopleValue, numOfPeopleContainer, 1);
 });
 
 const btnReset = document.querySelector('#btnReset');
