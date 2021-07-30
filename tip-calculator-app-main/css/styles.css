@@ -68,7 +68,7 @@ body {
 }
 
 .btn:hover, .btn:focus, .btn:active, .btn--active {
-  background: #95eadf;
+  background: #c5e4e7;
   color: var(--clr-primary-dark);
 }
 
@@ -79,10 +79,19 @@ body {
 
 .btn--reset {
   text-transform: uppercase;
-  background: var(--clr-primary);
+  background: var(--clr-primary-light);
   color: var(--clr-primary-dark);
   margin: 1rem 0;
   opacity: 0.4;
+  transition: opacity 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+
+.btn--reset:hover, .btn--reset:focus {
+  opacity: 1;
+}
+
+.btn--reset:active, .btn--reset:focus {
+  background: var(--clr-primary);
 }
 
 .grid {

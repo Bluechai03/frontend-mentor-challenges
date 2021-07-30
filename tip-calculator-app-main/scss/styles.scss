@@ -78,7 +78,7 @@ body {
   &:focus,
   &:active,
   &--active {
-    background: lighten(hsl(172, 67%, 45%), 30);
+    background: hsl(185, 41%, 84%);
     color: var(--clr-primary-dark);
   }
 
@@ -89,10 +89,20 @@ body {
 
   &--reset {
     text-transform: uppercase;
-    background: var(--clr-primary);
+    background: var(--clr-primary-light);
     color: var(--clr-primary-dark);
     margin: 1rem 0;
     opacity: 0.4;
+    transition: opacity 100ms ease-in-out, background-color 100ms ease-in-out;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active,
+    &:focus {
+      background: var(--clr-primary);
+    }
   }
 }
 
