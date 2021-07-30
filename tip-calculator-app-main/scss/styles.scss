@@ -76,6 +76,7 @@ body {
   transition: background-color 100ms ease-in-out;
   &:hover,
   &:focus,
+  &:disabled,
   &:active,
   &--active {
     background: var(--clr-primary);

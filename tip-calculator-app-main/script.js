@@ -1,6 +1,6 @@
 const displayTipAmount = document.querySelector('#numTipAmount');
 
-function calcTipAmount(billValue, tipValue, numOfPeopleValue) {
+function calcTipAmount(billValue = 0, tipValue = 0, numOfPeopleValue = 0) {
   if (billValue && tipValue && numOfPeopleValue) {
     console.log(`Bill Value: ${billValue}`);
     console.log(`Tip Value: ${tipValue}`);
@@ -61,6 +61,11 @@ wrapperTips.addEventListener('click', (e) => {
   if (!isButton) {
     return;
   }
+  const btnTips = document.querySelectorAll('.btn--tip');
+  btnTips.forEach((btn) => {
+    btn.disabled = false;
+  });
+  e.target.disabled = true;
   tipPercentValue = e.target.value;
   calcTotal(calcTipAmount(billValue, tipPercentValue, numOfPeopleValue));
 });
@@ -81,7 +86,6 @@ inputNumOfPeople.addEventListener('input', (e) => {
 });
 
 const btnReset = document.querySelector('#btnReset');
-if (!billValue || !tipPercentValue || !numOfPeopeValue) btnReset.disabled = true;
 btnReset.addEventListener('click', () => {
   billValue = 0;
   tipPercentValue = 0;

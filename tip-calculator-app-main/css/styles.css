@@ -67,7 +67,7 @@ body {
   transition: background-color 100ms ease-in-out;
 }
 
-.btn:hover, .btn:focus, .btn:active, .btn--active {
+.btn:hover, .btn:focus, .btn:disabled, .btn:active, .btn--active {
   background: var(--clr-primary);
   color: var(--clr-primary-dark);
   opacity: 1;
