@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-gray: hsl(0, 0%, 55%);
+  --clr-gray-dark: hsl(0, 0%, 41%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+p {
+  color: var(--clr-gray-dark);
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 2.125rem;
+  font-weight: 200;
+  margin: 0.75em 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-size: cover;
+}
+
+.nav__list {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 10em 0;
+}
+
+.hero__title {
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+  padding: 0.5em;
+  text-align: left;
+  font-size: 2.75rem;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.card__title {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */

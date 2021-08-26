@@ -8,21 +8,9 @@
   --clr-error: rgb(255, 126, 126);
 }
 
-%center-vertical {
+.input-field, .result__content, .result__content .col {
   display: flex;
   align-items: center;
-}
-
-@mixin mq($min-width, $max-width) {
-  @media screen and (min-width: $min-width) and (max-width: $max-width) {
-    @content;
-  }
-}
-
-@mixin mq-min($min-width: 42em) {
-  @media screen and (min-width: $min-width) {
-    @content;
-  }
 }
 
 *,
@@ -57,7 +45,10 @@ body {
   flex-direction: column;
   display: grid;
   place-items: center stretch;
-  @include mq-min(52em) {
+}
+
+@media screen and (min-width: 52em) {
+  body {
     grid-template-rows: 1fr 2fr 1fr;
   }
 }
@@ -74,36 +65,33 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
-  &:hover,
-  &:focus,
-  &:active,
-  &--active {
-    background: hsl(185, 41%, 84%);
-    color: var(--clr-primary-dark);
-  }
+}
 
-  &:disabled {
-    background: var(--clr-primary);
-    color: var(--clr-primary-dark);
-  }
+.btn:hover, .btn:focus, .btn:active, .btn--active {
+  background: #c5e4e7;
+  color: var(--clr-primary-dark);
+}
 
-  &--reset {
-    text-transform: uppercase;
-    background: var(--clr-primary-light);
-    color: var(--clr-primary-dark);
-    margin: 1rem 0;
-    opacity: 0.4;
-    transition: opacity 100ms ease-in-out, background-color 100ms ease-in-out;
-    &:hover,
-    &:focus {
-      opacity: 1;
-    }
+.btn:disabled {
+  background: var(--clr-primary);
+  color: var(--clr-primary-dark);
+}
 
-    &:active,
-    &:focus {
-      background: var(--clr-primary);
-    }
-  }
+.btn--reset {
+  text-transform: uppercase;
+  background: var(--clr-primary-light);
+  color: var(--clr-primary-dark);
+  margin: 1rem 0;
+  opacity: 0.3;
+  transition: opacity 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+
+.btn--reset:hover, .btn--reset:focus {
+  opacity: 1;
+}
+
+.btn--reset:active, .btn--reset:focus {
+  background: var(--clr-primary);
 }
 
 .grid {
@@ -112,7 +100,10 @@ body {
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   grid-auto-rows: minmax(1rem, auto);
-  @include mq-min() {
+}
+
+@media screen and (min-width: 42em) {
+  .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -123,10 +114,11 @@ body {
   letter-spacing: 1rem;
   padding: 2rem;
   color: var(--clr-gray-dark);
-  &::after {
-    display: block;
-    content: 'tter';
-  }
+}
+
+.title::after {
+  display: block;
+  content: 'tter';
 }
 
 .card {
@@ -139,56 +131,54 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  @include mq-min(52em) {
+}
+
+@media screen and (min-width: 52em) {
+  .flex {
     flex-direction: row;
   }
 }
 
 .col {
   width: 100%;
-  &--input {
-    label ~ label,
-    p {
-      margin-top: 2rem;
-    }
+}
 
-    label {
-      margin-bottom: 0.5rem;
-    }
-  }
-  &--dark {
-    background: var(--clr-primary-dark);
-  }
+.col--input label ~ label,
+.col--input p {
+  margin-top: 2rem;
+}
+
+.col--input label {
+  margin-bottom: 0.5rem;
+}
+
+.col--dark {
+  background: var(--clr-primary-dark);
 }
 
 .input-field {
-  @extend %center-vertical;
   flex-direction: row-reverse;
   justify-content: space-between;
   background: var(--clr-cream);
   padding: 0.5rem 1rem;
   border-radius: 0.35rem;
-  &:hover,
-  &:focus,
-  &--active {
-    outline: 3px solid var(--clr-primary);
-  }
+}
 
-  &__input {
-    all: unset;
-    font-weight: 700;
-    text-align: end;
-    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+.input-field:hover, .input-field:focus, .input-field--active {
+  outline: 3px solid var(--clr-primary);
+}
 
-    width: 100%;
-    color: var(--clr-primary-dark);
-  }
+.input-field__input {
+  all: unset;
+  font-weight: 700;
+  text-align: end;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  width: 100%;
+  color: var(--clr-primary-dark);
+}
 
-  &--error,
-  &--error:hover,
-  &--error:focus {
-    outline: 3px solid var(--clr-error);
-  }
+.input-field--error, .input-field--error:hover, .input-field--error:focus {
+  outline: 3px solid var(--clr-error);
 }
 
 .input-label {
@@ -202,16 +192,17 @@ body {
   color: var(--clr-error);
 }
 
-// Remove arrow buttons from input fields
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type='number'] {
-  -moz-appearance: textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
 .result {
@@ -220,37 +211,38 @@ input[type='number'] {
   padding: 1.75rem;
   border-radius: 1em;
   justify-content: space-between;
-  &__content {
-    @extend %center-vertical;
-    flex-direction: column;
-    justify-content: space-between;
+}
 
-    .col {
-      @extend %center-vertical;
-      justify-content: space-between;
-    }
-  }
+.result__content {
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  &__label {
-    color: var(--clr-cream);
-    margin-bottom: 0;
-  }
+.result__content .col {
+  justify-content: space-between;
+}
 
-  &__label::after {
-    display: block;
-    content: '/ person';
-    color: var(--clr-gray-dark);
-  }
+.result__label {
+  color: var(--clr-cream);
+  margin-bottom: 0;
+}
 
-  &__num {
-    color: var(--clr-primary);
-    &::before {
-      content: '$';
-    }
-    font-size: clamp(2rem, 5vw, 3rem);
-  }
+.result__label::after {
+  display: block;
+  content: '/ person';
+  color: var(--clr-gray-dark);
+}
+
+.result__num {
+  color: var(--clr-primary);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.result__num::before {
+  content: '$';
 }
 
 .attribution {
   text-align: center;
 }
+/*# sourceMappingURL=styles.css.map */
