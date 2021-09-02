@@ -26,10 +26,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Front End Mentor Challenges</h3>
+  <h3 align="center">Frontend Mentor Challenges</h3>
 
   <p align="center">
-    My solutions for Front End Mentor challenges!
+    My solutions for Frontend Mentor challenges!
     <br />
     <br />
   </p>
@@ -52,13 +52,13 @@
 
 ## About The Repo
 
-The purpose of this repo is to store all my solutions and attempts at completing Front End Mentor challenges, which is to replicate a given web design as close as possible through code. I did these challenges so that I could focus on improving my coding skills without having to worry about creating a good design everytime.
+The purpose of this repo is to store all my solutions and attempts at completing Frontend Mentor challenges, which is to replicate a given web design as close as possible through code. I did these challenges so that I could focus on improving my coding skills without having to worry about creating a good design everytime.
 
 Folders with a number are challenges I've completed and the rest are currently unfinished.
 
 You can also see my completed solutions here: [https://www.frontendmentor.io/profile/Bluechai03](https://www.frontendmentor.io/profile/Bluechai03)
 
-All design and assets are provided by Front End Mentor.
+All design and assets are provided by Frontend Mentor.
 
 # Completed Challenges
 
@@ -66,11 +66,11 @@ All design and assets are provided by Front End Mentor.
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-[Live]()
+<!-- Write a little about this challenge -->
 
-[Code]()
+[Live]() | [Code]()
 
-Built with:
+Built with: HTML and CSS
 
 <!-- CONTACT -->
 
