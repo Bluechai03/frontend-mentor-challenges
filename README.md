@@ -64,7 +64,7 @@ All design and assets are provided by Frontend Mentor.
 
 ## 01 - Fylo Data Storage Component
 
-[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/3YVC9QT.jpg)
+![Challenge 01 Preview](https://i.imgur.com/3YVC9QT.jpg)
 
 <!-- Write a little about this challenge -->
 
