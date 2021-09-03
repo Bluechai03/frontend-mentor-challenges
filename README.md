@@ -74,9 +74,8 @@ All design and assets are provided by Frontend Mentor.
       Code
     </a>
   </h3>
+    <img src="https://i.imgur.com/3YVC9QT.jpg" alt="drawing" width="500"/>
   </div>
-
-<img align="center" src="https://i.imgur.com/3YVC9QT.jpg" alt="drawing" width="500"/>
 
 <!-- Write a little about this challenge -->
 
