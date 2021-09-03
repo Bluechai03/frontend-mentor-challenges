@@ -62,16 +62,16 @@ All design and assets are provided by Frontend Mentor.
 
 # Completed Challenges
 
-## 01 - Fylo Data Storage Component
+## 01 - Fylo data storage component
 
 <div align="center">
   <h3>
     <a target="_blank" href="https://bluechai-fylo-data-storage-component.netlify.app/">
-      Demo
+      Live
     </a>
     <span> | </span>
     <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/01-fylo-data-storage-component">
-      Solution
+      Code
     </a>
   </h3>
   </div>
@@ -83,6 +83,126 @@ All design and assets are provided by Frontend Mentor.
 ### About This Challenge
 
 Built with: HTML and CSS
+
+<!-- Words -->
+
+## 02 - Single price grid component
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-single-price-grid-component.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/02-single-price-grid-component">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 02 Preview](https://i.imgur.com/Z0DtyyN.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+## 03 - Huddle landing page
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-huddle-landing-page.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/03-huddle-landing-page">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 03 Preview](https://i.imgur.com/roPywRp.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
+
+## 04 - Profile card component
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-profile-card-component.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/04-profile-card-component">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 03 Preview](https://i.imgur.com/cjGldYB.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
+
+## 06 - Tip calculator app
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-tip-calculator-app.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/06-tip-calculator-app">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 03 Preview](https://i.imgur.com/62f3GMn.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
+
+## 05 - 3 column preview card component
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-3-column-preview-card-component.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/05-3-column-preview-card-component">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 03 Preview](https://i.imgur.com/Hm2481h.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
 
 <!-- CONTACT -->
 
