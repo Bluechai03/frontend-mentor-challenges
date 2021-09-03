@@ -146,31 +146,7 @@ Built with: HTML
   </h3>
   </div>
 
-![Challenge 03 Preview](https://i.imgur.com/cjGldYB.jpg)
-
-<!-- Write a little about this challenge -->
-
-### About This Challenge
-
-Built with: HTML
-
-<!-- Words -->
-
-## 06 - Tip calculator app
-
-<div align="center">
-  <h3>
-    <a target="_blank" href="https://bluechai-tip-calculator-app.netlify.app/">
-      Live
-    </a>
-    <span> | </span>
-    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/06-tip-calculator-app">
-      Code
-    </a>
-  </h3>
-  </div>
-
-![Challenge 03 Preview](https://i.imgur.com/62f3GMn.jpg)
+![Challenge 04 Preview](https://i.imgur.com/cjGldYB.jpg)
 
 <!-- Write a little about this challenge -->
 
@@ -195,6 +171,54 @@ Built with: HTML
   </div>
 
 ![Challenge 03 Preview](https://i.imgur.com/Hm2481h.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
+
+## 06 - Tip calculator app
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-tip-calculator-app.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/06-tip-calculator-app">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 06 Preview](https://i.imgur.com/62f3GMn.jpg)
+
+<!-- Write a little about this challenge -->
+
+### About This Challenge
+
+Built with: HTML
+
+<!-- Words -->
+
+## 07 - Social proof section
+
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-tip-calculator-app.netlify.app/">
+      Live
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://bluechai-social-proof-section.netlify.app/">
+      Code
+    </a>
+  </h3>
+  </div>
+
+![Challenge 06 Preview](https://i.imgur.com/o9Q2Hjm.jpg)
 
 <!-- Write a little about this challenge -->
 
