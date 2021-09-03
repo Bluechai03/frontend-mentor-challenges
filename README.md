@@ -64,11 +64,11 @@ All design and assets are provided by Frontend Mentor.
 
 ## 01 - Fylo Data Storage Component
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/3YVC9QT.jpg)
 
 <!-- Write a little about this challenge -->
 
-[Live]() | [Code]()
+[Live](https://bluechai-fylo-data-storage-component.netlify.app/) | [Code](https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/01-fylo-data-storage-component)
 
 Built with: HTML and CSS
 
