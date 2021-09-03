@@ -76,7 +76,7 @@ All design and assets are provided by Frontend Mentor.
   </h3>
   </div>
 
-![Challenge 01 Preview](https://i.imgur.com/3YVC9QT.jpg)
+<img src="https://i.imgur.com/3YVC9QT.jpg" alt="drawing" width="200"/>
 
 <!-- Write a little about this challenge -->
 
@@ -208,11 +208,11 @@ Built with: HTML
 
 <div align="center">
   <h3>
-    <a target="_blank" href="https://bluechai-tip-calculator-app.netlify.app/">
+    <a target="_blank" href="https://bluechai-social-proof-section.netlify.app/">
       Live
     </a>
     <span> | </span>
-    <a target="_blank" href="https://bluechai-social-proof-section.netlify.app/">
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/07-social-proof-section">
       Code
     </a>
   </h3>
