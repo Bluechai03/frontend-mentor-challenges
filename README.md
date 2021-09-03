@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Bluechai03/frontend-mentor-challenges">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://i.imgur.com/7sXIzX7.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Frontend Mentor Challenges</h3>
@@ -64,11 +64,23 @@ All design and assets are provided by Frontend Mentor.
 
 ## 01 - Fylo Data Storage Component
 
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://bluechai-fylo-data-storage-component.netlify.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/01-fylo-data-storage-component">
+      Solution
+    </a>
+  </h3>
+  </div>
+
 ![Challenge 01 Preview](https://i.imgur.com/3YVC9QT.jpg)
 
 <!-- Write a little about this challenge -->
 
-[Live](https://bluechai-fylo-data-storage-component.netlify.app/) | [Code](https://github.com/Bluechai03/frontend-mentor-challenges/tree/master/01-fylo-data-storage-component)
+### About This Challenge
 
 Built with: HTML and CSS
 
